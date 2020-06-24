@@ -1,0 +1,113 @@
+div#Menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 71px;
+    height: 657px;
+    background-color:#202225;
+}
+/* botões fora da lista */
+.default{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    width: 47px;
+    height: 47px;
+    border-radius: 17px;
+    background-color:#7289da;
+    color: white;
+}
+#div2{
+    margin-top: 8px;
+    width: 47px;
+    height: 47px;
+    border-radius: 100px;
+    background-color:#36393f;
+    transition: border-radius 0.2s;
+    transition: background-color 0.2s;
+    color: #41a97b;
+}
+#div2:hover{
+    border-radius: 17px;
+    background-color:#41a97b;
+    color: white;
+}
+.default1{ 
+    width: 33px;
+    height: 2px;
+    border: 3px;
+    background-color:#36393f;
+}
+/* lista */
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 47px;
+    height: 47px;
+    border-radius: 100px;
+    background-color: #36393f;
+    color: #41a97b;
+    transition: border-radius 0.2s;
+    transition: background-color 0.2s;
+}
+li:hover{
+    border-radius: 17px;
+    background-color:#41a97b;
+    color: white;
+}
+#icon{
+    font-size: 22px;
+}
+/* marcador lateral */
+.marc {
+    display: none;
+    position: absolute;
+    left: -18px;
+    width: 10px;
+    height: 23px;
+    border-radius: 5px;
+    background-color: white;
+    transition: display 0.2s;
+}
+#m1{
+    display: block;
+    height: 42px;
+}
+li:hover .marc{
+    display: block;
+}
+#div1:hover .marc{
+    display: block;
+}
+#div2:hover .marc{
+    display: block;
+}
+/* after */
+[data-tooltip] {
+    position: relative;
+    font-weight: bold;
+  }
+[data-tooltip]:after {
+    display: none;
+    position: absolute;
+    top: 6px;
+    left: 70px;
+    padding: 10px;
+    border-radius: 3px;
+    content: attr(data-tooltip);
+    white-space: nowrap;
+    background-color: black;
+    color: White;
+    font-size: 15px;    
+}
+[data-tooltip]:hover:after {
+    display: block;
+  }
